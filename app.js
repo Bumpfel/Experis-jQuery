@@ -9,13 +9,13 @@ $(document).ready(function () {
       });
 
       $("#posts a").hover(function (e) {
-        $(this).filter(':not(:animated)').animate({
-          fontSize: '25px'
-        });
-      },function (e) {
-          $(this).animate({
-            fontSize: '15px'
-          });
+        $(this).animate({
+          fontSize: '20px',
+        }, { queue: false });
+      }, function (e) {
+        $(this).animate({
+          fontSize: '15px'
+        }, { queue: false });
       });
     },
     error: function () {
